@@ -5,6 +5,7 @@ class AddressBook {
   currentPage;
   currentPageList;
   toBeDeletedList;
+  searchKey;
 
   constructor(
     contactList = [
@@ -65,15 +66,22 @@ class AddressBook {
     this.currentPage = 1;
     this.currentPageList = contactList.slice(0, 10);
     this.toBeDeletedList = [];
+    this.searchKey = "";
   }
 
   updateTotalPage() {
-    this.totalPage = Math.floor(this.contactList.length / 10);
+    const filteredList = this.contactList.filter((contact) =>
+      contact.fullName.includes(this.searchKey)
+    );
+    this.totalPage = Math.floor(filteredList.length / 10);
   }
 
   handleChangePage(page) {
+    const filteredList = this.contactList.filter((contact) =>
+      contact.fullName.includes(this.searchKey)
+    );
     this.currentPage = page;
-    this.currentPageList = this.contactList.slice(
+    this.currentPageList = filteredList.slice(
       (page - 1) * 10,
       (page - 1) * 10 + 10
     );
@@ -127,6 +135,7 @@ const closeModalButton = document.querySelector("#close-create-modal");
 const contactListTableBody = document.querySelector("#contact-list-table-body");
 const deleteContactButton = document.querySelector("#delete-contact-button");
 const checkboxAll = document.querySelector("#checkbox-all");
+const searchBox = document.querySelector("#table-search-users");
 
 const handleCreateModal = () => {
   const modal = document.querySelector("#modal-overlay-bg");
@@ -240,6 +249,15 @@ const handleRefreshDeleteButton = () => {
   }
 };
 
+const handleSearchKey = (e) => {
+  const value = e.target.value;
+  AddressBookEntity.searchKey = value;
+  AddressBookEntity.updateTotalPage();
+  AddressBookEntity.handleChangePage(1);
+  handleRefreshTableBody();
+  handleRefreshDeleteButton();
+};
+
 const generateTRElement = (contact) =>
   `<tr data-key=${contact.id} class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
     <td class="w-4 p-4">
@@ -275,6 +293,17 @@ const generateTRElement = (contact) =>
     </td>
   </tr>`;
 
+const debounce = (mainFunction, delay) => {
+  let timer;
+
+  return function (...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      mainFunction(...args);
+    }, delay);
+  };
+};
+
 handleRefreshTableBody();
 handleRefreshDeleteButton();
 
@@ -283,3 +312,4 @@ openCreateModalButton?.addEventListener("click", handleCreateModal);
 closeModalButton?.addEventListener("click", handleCancelModal);
 deleteContactButton?.addEventListener("click", handleDeleteContact);
 checkboxAll.addEventListener("change", handleCheckAll);
+searchBox.addEventListener("keyup", debounce(handleSearchKey, 500));
