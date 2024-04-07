@@ -6,6 +6,7 @@ class AddressBook {
   currentPageList;
   toBeDeletedList;
   searchKey;
+  currentEditedContactId;
 
   constructor(
     contactList = [
@@ -67,6 +68,7 @@ class AddressBook {
     this.currentPageList = contactList.slice(0, 10);
     this.toBeDeletedList = [];
     this.searchKey = "";
+    this.currentEditedContactId = null;
   }
 
   updateTotalPage() {
@@ -95,6 +97,10 @@ class AddressBook {
 
   addToBeDeleted(id) {
     this.toBeDeletedList.push(id);
+  }
+
+  getContact(id) {
+    return this.contactList.filter((contact) => contact.id === id)[0];
   }
 
   editContact(id, editedField) {
@@ -145,6 +151,8 @@ const handleCreateModal = () => {
 const handleCancelModal = () => {
   const modal = document.querySelector("#modal-overlay-bg");
   modal?.classList.add("hidden");
+  clearFields();
+  AddressBookEntity.currentEditedContactId = null;
 };
 
 const handleSubmitForm = (e) => {
@@ -158,22 +166,35 @@ const handleSubmitForm = (e) => {
   const address = document.querySelector("#address").value;
 
   if (firstName && lastName && category && phoneNumber && email && address) {
-    AddressBookEntity.addContact({
-      firstName,
-      lastName,
-      category,
-      phoneNumber,
-      email,
-      address,
-      fullName: firstName + " " + lastName,
-      id: AddressBookEntity.contactList.length
-        ? AddressBookEntity.contactList[
-            AddressBookEntity.contactList.length - 1
-          ].id + 1
-        : 1,
-    });
+    if (!AddressBookEntity.currentEditedContactId) {
+      AddressBookEntity.addContact({
+        firstName,
+        lastName,
+        category,
+        phoneNumber,
+        email,
+        address,
+        fullName: firstName + " " + lastName,
+        id: AddressBookEntity.contactList.length
+          ? AddressBookEntity.contactList[
+              AddressBookEntity.contactList.length - 1
+            ].id + 1
+          : 1,
+      });
+    } else {
+      AddressBookEntity.editContact(AddressBookEntity.currentEditedContactId, {
+        firstName,
+        lastName,
+        category,
+        phoneNumber,
+        email,
+        address,
+        fullName: firstName + " " + lastName,
+      });
+    }
   }
 
+  AddressBookEntity.handleChangePage(AddressBookEntity.currentPage);
   handleCancelModal();
   handleRefreshTableBody();
 };
@@ -205,8 +226,14 @@ const handleRefreshTableBody = () => {
     "input[type=checkbox]"
   );
 
+  const allEditButtons = document.querySelectorAll("#edit-button");
+
   allCheckboxeElements.forEach((checkbox) =>
     checkbox.addEventListener("change", handleClickCheckbox)
+  );
+
+  allEditButtons.forEach((editButton) =>
+    editButton.addEventListener("click", handleClickEdit)
   );
 
   handleRefreshDeleteButton();
@@ -258,6 +285,44 @@ const handleSearchKey = (e) => {
   handleRefreshDeleteButton();
 };
 
+const handleClickEdit = (e) => {
+  const attributeId = +e.target.getAttribute("data-key");
+  AddressBookEntity.currentEditedContactId = attributeId;
+  const contact = AddressBookEntity.getContact(attributeId);
+
+  const firstName = document.querySelector("#first_name");
+  const lastName = document.querySelector("#last_name");
+  const category = document.querySelector("#category");
+  const phoneNumber = document.querySelector("#phone");
+  const email = document.querySelector("#email");
+  const address = document.querySelector("#address");
+
+  firstName.value = contact.firstName;
+  lastName.value = contact.lastName;
+  category.value = contact.category;
+  phoneNumber.value = contact.phoneNumber;
+  email.value = contact.email;
+  address.value = contact.address;
+
+  handleCreateModal();
+};
+
+const clearFields = () => {
+  const firstName = document.querySelector("#first_name");
+  const lastName = document.querySelector("#last_name");
+  const category = document.querySelector("#category");
+  const phoneNumber = document.querySelector("#phone");
+  const email = document.querySelector("#email");
+  const address = document.querySelector("#address");
+
+  firstName.value = "";
+  lastName.value = "";
+  category.value = "";
+  phoneNumber.value = "";
+  email.value = "";
+  address.value = "";
+};
+
 const generateTRElement = (contact) =>
   `<tr data-key=${contact.id} class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
     <td class="w-4 p-4">
@@ -284,12 +349,9 @@ const generateTRElement = (contact) =>
     <td class="px-6 py-4">${contact.phoneNumber}</td>
     <td class="px-6 py-4">${contact.email}</td>
     <td class="px-6 py-4">
-      <a
-        href="#"
-        class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-      >
+      <span id="edit-button" data-key=${contact.id} class="font-medium text-blue-600 dark:text-blue-500 hover:underline cursor-pointer">
         Edit
-      </a>
+      </span>
     </td>
   </tr>`;
 
