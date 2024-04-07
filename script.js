@@ -142,6 +142,8 @@ const contactListTableBody = document.querySelector("#contact-list-table-body");
 const deleteContactButton = document.querySelector("#delete-contact-button");
 const checkboxAll = document.querySelector("#checkbox-all");
 const searchBox = document.querySelector("#table-search-users");
+const viewedData = document.querySelector("#viewed-data");
+const totalData = document.querySelector("#total-data");
 
 const handleCreateModal = () => {
   const modal = document.querySelector("#modal-overlay-bg");
@@ -237,6 +239,21 @@ const handleRefreshTableBody = () => {
   );
 
   handleRefreshDeleteButton();
+  handleRefreshTotalData();
+};
+
+const handleRefreshTotalData = () => {
+  const fromNumber = (AddressBookEntity.currentPage - 1) * 10 + 1;
+  const toNumber =
+    (AddressBookEntity.currentPage - 1) * 10 +
+    1 +
+    (AddressBookEntity.currentPageList.length - 1);
+  viewedData.innerText = `${fromNumber}-${toNumber}`;
+  totalData.innerText = `${
+    AddressBookEntity.contactList.filter((contact) =>
+      contact.fullName.includes(AddressBookEntity.searchKey)
+    ).length
+  }`;
 };
 
 const handleDeleteContact = () => {
@@ -373,5 +390,5 @@ createContactForm?.addEventListener("submit", handleSubmitForm);
 openCreateModalButton?.addEventListener("click", handleCreateModal);
 closeModalButton?.addEventListener("click", handleCancelModal);
 deleteContactButton?.addEventListener("click", handleDeleteContact);
-checkboxAll.addEventListener("change", handleCheckAll);
-searchBox.addEventListener("keyup", debounce(handleSearchKey, 500));
+checkboxAll?.addEventListener("change", handleCheckAll);
+searchBox?.addEventListener("keyup", debounce(handleSearchKey, 500));
