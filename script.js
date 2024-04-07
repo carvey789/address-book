@@ -503,11 +503,6 @@ const handleRefreshTotalData = () => {
     1 +
     (AddressBookEntity.currentPageList.length - 1);
   viewedData.innerText = `${fromNumber}-${toNumber}`;
-  console.log(
-    AddressBookEntity.contactList.filter((contact) =>
-      contact.fullName.includes(AddressBookEntity.searchKey)
-    )
-  );
   totalData.innerText = `${
     AddressBookEntity.contactList.filter((contact) =>
       contact.fullName.includes(AddressBookEntity.searchKey)
