@@ -60,10 +60,242 @@ class AddressBook {
         category: "Friend",
         fullName: "Full E",
       },
+      {
+        id: 6,
+        firstName: "First A6",
+        lastName: "Last A6",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full A6",
+      },
+      {
+        id: 7,
+        firstName: "First B7",
+        lastName: "Last B7",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full B7",
+      },
+      {
+        id: 8,
+        firstName: "First C8",
+        lastName: "Last C8",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full C8",
+      },
+      {
+        id: 9,
+        firstName: "First D9",
+        lastName: "Last D9",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full D9",
+      },
+      {
+        id: 10,
+        firstName: "First E10",
+        lastName: "Last E10",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full E10",
+      },
+      {
+        id: 11,
+        firstName: "First A11",
+        lastName: "Last A11",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full A11",
+      },
+      {
+        id: 12,
+        firstName: "First B12",
+        lastName: "Last B12",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full B12",
+      },
+      {
+        id: 13,
+        firstName: "First C13",
+        lastName: "Last C13",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full C13",
+      },
+      {
+        id: 14,
+        firstName: "First D14",
+        lastName: "Last D14",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full D14",
+      },
+      {
+        id: 15,
+        firstName: "First E15",
+        lastName: "Last E15",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full E15",
+      },
+      {
+        id: 16,
+        firstName: "First A16",
+        lastName: "Last A16",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A16",
+        category: "Friend",
+        fullName: "Full A16",
+      },
+      {
+        id: 17,
+        firstName: "First B17",
+        lastName: "Last B17",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full B17",
+      },
+      {
+        id: 18,
+        firstName: "First C18",
+        lastName: "Last C18",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full C18",
+      },
+      {
+        id: 19,
+        firstName: "First D19",
+        lastName: "Last D19",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full D19",
+      },
+      {
+        id: 20,
+        firstName: "First E20",
+        lastName: "Last E20",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full E20",
+      },
+      {
+        id: 21,
+        firstName: "First B12",
+        lastName: "Last B12",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full B12",
+      },
+      {
+        id: 22,
+        firstName: "First B12",
+        lastName: "Last B12",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full B12",
+      },
+      {
+        id: 23,
+        firstName: "First B12",
+        lastName: "Last B12",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full B12",
+      },
+      {
+        id: 24,
+        firstName: "First B12",
+        lastName: "Last B12",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full B12",
+      },
+      {
+        id: 25,
+        firstName: "First B12",
+        lastName: "Last B12",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full B12",
+      },
+      {
+        id: 26,
+        firstName: "First B12",
+        lastName: "Last B12",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full B12",
+      },
+      {
+        id: 27,
+        firstName: "First B12",
+        lastName: "Last B12",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full B12",
+      },
+      {
+        id: 28,
+        firstName: "First B12",
+        lastName: "Last B12",
+        email: "first@gmail.com",
+        phoneNumber: "08111111111",
+        address: "Jl A",
+        category: "Friend",
+        fullName: "Full B12",
+      },
     ]
   ) {
     this.contactList = contactList;
-    this.totalPage = Math.floor(contactList.length / 10);
+    this.totalPage = Math.ceil(contactList.length / 10)
+      ? Math.ceil(contactList.length / 10)
+      : 1;
     this.currentPage = 1;
     this.currentPageList = contactList.slice(0, 10);
     this.toBeDeletedList = [];
@@ -75,7 +307,7 @@ class AddressBook {
     const filteredList = this.contactList.filter((contact) =>
       contact.fullName.includes(this.searchKey)
     );
-    this.totalPage = Math.floor(filteredList.length / 10);
+    this.totalPage = Math.ceil(filteredList.length / 10);
   }
 
   handleChangePage(page) {
@@ -90,7 +322,7 @@ class AddressBook {
   }
 
   addContact(contact) {
-    this.contactList.push(contact);
+    this.contactList.unshift(contact);
     this.updateTotalPage();
     this.handleChangePage(this.currentPage);
   }
@@ -144,6 +376,7 @@ const checkboxAll = document.querySelector("#checkbox-all");
 const searchBox = document.querySelector("#table-search-users");
 const viewedData = document.querySelector("#viewed-data");
 const totalData = document.querySelector("#total-data");
+const pageList = document.querySelector("#page-list");
 
 const handleCreateModal = () => {
   const modal = document.querySelector("#modal-overlay-bg");
@@ -178,9 +411,7 @@ const handleSubmitForm = (e) => {
         address,
         fullName: firstName + " " + lastName,
         id: AddressBookEntity.contactList.length
-          ? AddressBookEntity.contactList[
-              AddressBookEntity.contactList.length - 1
-            ].id + 1
+          ? AddressBookEntity.contactList[0].id + 1
           : 1,
       });
     } else {
@@ -219,6 +450,27 @@ const handleClickCheckbox = (e) => {
   handleRefreshDeleteButton();
 };
 
+const handleClickPage = (e) => {
+  const page = +e.target.getAttribute("data-page");
+  AddressBookEntity.currentPage = page;
+  AddressBookEntity.handleChangePage(page);
+  handleRefreshTableBody();
+};
+
+const handleClickPrevPage = (e) => {
+  const page = AddressBookEntity.currentPage - 1;
+  AddressBookEntity.currentPage = page;
+  AddressBookEntity.handleChangePage(page);
+  handleRefreshTableBody();
+};
+
+const handleClickNextPage = (e) => {
+  const page = AddressBookEntity.currentPage + 1;
+  AddressBookEntity.currentPage = page;
+  AddressBookEntity.handleChangePage(page);
+  handleRefreshTableBody();
+};
+
 const handleRefreshTableBody = () => {
   contactListTableBody.innerHTML = AddressBookEntity.currentPageList
     .map((contact) => generateTRElement(contact))
@@ -240,6 +492,7 @@ const handleRefreshTableBody = () => {
 
   handleRefreshDeleteButton();
   handleRefreshTotalData();
+  handleRefreshPagination();
 };
 
 const handleRefreshTotalData = () => {
@@ -249,6 +502,11 @@ const handleRefreshTotalData = () => {
     1 +
     (AddressBookEntity.currentPageList.length - 1);
   viewedData.innerText = `${fromNumber}-${toNumber}`;
+  console.log(
+    AddressBookEntity.contactList.filter((contact) =>
+      contact.fullName.includes(AddressBookEntity.searchKey)
+    )
+  );
   totalData.innerText = `${
     AddressBookEntity.contactList.filter((contact) =>
       contact.fullName.includes(AddressBookEntity.searchKey)
@@ -256,6 +514,46 @@ const handleRefreshTotalData = () => {
   }`;
 };
 
+const handleRefreshPagination = () => {
+  const isPrevEnable = AddressBookEntity.currentPage > 1;
+  const isNextEnable =
+    AddressBookEntity.currentPage < AddressBookEntity.totalPage;
+  const pages = [];
+  for (let i = 1; i <= AddressBookEntity.totalPage; i++) {
+    pages.push(generatePageList(i, i === AddressBookEntity.currentPage));
+  }
+
+  if (isPrevEnable) {
+    pages.unshift(`<li>
+      <span id="prev-page" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+        Previous
+      </span>
+    </li>`);
+  }
+
+  if (isNextEnable) {
+    pages.push(`<li>
+      <span
+        id="next-page"
+        class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+        >Next</span
+      >
+    </li>`);
+  }
+
+  pageList.innerHTML = pages.join("");
+
+  const pageButtons = document.querySelectorAll(".page");
+  const prevPage = document.querySelector("#prev-page");
+  const nextPage = document.querySelector("#next-page");
+
+  pageButtons.forEach((button) =>
+    button.addEventListener("click", handleClickPage)
+  );
+
+  prevPage?.addEventListener("click", handleClickPrevPage);
+  nextPage?.addEventListener("click", handleClickNextPage);
+};
 const handleDeleteContact = () => {
   AddressBookEntity.deleteContact();
   handleRefreshTableBody();
@@ -371,6 +669,16 @@ const generateTRElement = (contact) =>
       </span>
     </td>
   </tr>`;
+
+const generatePageList = (page, isActivePage = false) => {
+  return `<li class="page ${
+    isActivePage ? "cursor-none" : "cursor-pointer"
+  }" data-page=${page}><span data-page=${page} class="${
+    isActivePage
+      ? "flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
+      : "flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+  }">${page}</span></li>`;
+};
 
 const debounce = (mainFunction, delay) => {
   let timer;
