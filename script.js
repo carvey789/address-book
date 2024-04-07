@@ -381,7 +381,7 @@ const pageList = document.querySelector("#page-list");
 
 const handleCreateModal = () => {
   const modal = document.querySelector("#modal-overlay-bg");
-  modal?.classList.replace("hidden", "block");
+  modal?.classList.replace("hidden", "flex");
 };
 
 const handleCancelModal = () => {
