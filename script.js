@@ -13,8 +13,8 @@ const dummyDatas = [
   },
   {
     id: 29,
-    firstName: "First B",
-    lastName: "Last B",
+    firstName: "Edward",
+    lastName: "Marshall",
     email: "jifajolo@elebaru.pf",
     phoneNumber: "(301) 934-4727",
     address: "1857 Lovij Square",
@@ -23,8 +23,8 @@ const dummyDatas = [
   },
   {
     id: 28,
-    firstName: "First C",
-    lastName: "Last C",
+    firstName: "Derrick",
+    lastName: "Chandler",
     email: "evojukaz@ijgiowa.gg",
     phoneNumber: "(841) 319-9212",
     address: "923 Zola Trail",
@@ -33,8 +33,8 @@ const dummyDatas = [
   },
   {
     id: 27,
-    firstName: "First D",
-    lastName: "Last D",
+    firstName: "Jack",
+    lastName: "Summers",
     email: "te@wesmadi.zm",
     phoneNumber: "(218) 456-2557",
     address: "1654 Didic Lane",
@@ -43,8 +43,8 @@ const dummyDatas = [
   },
   {
     id: 26,
-    firstName: "First E",
-    lastName: "Last E",
+    firstName: "Lillian",
+    lastName: "Terry",
     email: "oremila@vir.rw",
     phoneNumber: "(551) 884-4029",
     address: "1991 Galo View",
@@ -53,8 +53,8 @@ const dummyDatas = [
   },
   {
     id: 25,
-    firstName: "First A6",
-    lastName: "Last A6",
+    firstName: "Alejandro",
+    lastName: "Schwartz",
     email: "ja@zotiruz.mo",
     phoneNumber: "(550) 302-4668",
     address: "151 Usuro Heights",
@@ -63,8 +63,8 @@ const dummyDatas = [
   },
   {
     id: 24,
-    firstName: "First B7",
-    lastName: "Last B7",
+    firstName: "Leo",
+    lastName: "Alvarado",
     email: "wikwuwpak@mosukel.ac",
     phoneNumber: "(876) 855-9432",
     address: "591 Juzoc Park",
@@ -73,8 +73,8 @@ const dummyDatas = [
   },
   {
     id: 23,
-    firstName: "First C8",
-    lastName: "Last C8",
+    firstName: "Lina",
+    lastName: "Hawkins",
     email: "en@wow.zm",
     phoneNumber: "(706) 429-1227",
     address: "298 Zufe Key",
@@ -83,8 +83,8 @@ const dummyDatas = [
   },
   {
     id: 22,
-    firstName: "First D9",
-    lastName: "Last D9",
+    firstName: "Rosetta",
+    lastName: "Gibson",
     email: "salo@sindunpof.om",
     phoneNumber: "(705) 960-2825",
     address: "1264 Givmi Junction",
@@ -93,8 +93,8 @@ const dummyDatas = [
   },
   {
     id: 21,
-    firstName: "First E10",
-    lastName: "Last E10",
+    firstName: "Mayme",
+    lastName: "Ball",
     email: "cizlonap@retu.kz",
     phoneNumber: "(425) 901-3183",
     address: "1074 Wutsu Court",
@@ -103,8 +103,8 @@ const dummyDatas = [
   },
   {
     id: 20,
-    firstName: "First A11",
-    lastName: "Last A11",
+    firstName: "Marguerite",
+    lastName: "Alvarez",
     email: "vemba@wujasmit.sc",
     phoneNumber: "(661) 469-7774",
     address: "662 Zofzos Point",
@@ -113,8 +113,8 @@ const dummyDatas = [
   },
   {
     id: 19,
-    firstName: "First B12",
-    lastName: "Last B12",
+    firstName: "Rodney",
+    lastName: "Cross",
     email: "tafi@baake.kg",
     phoneNumber: "(337) 660-3809",
     address: "94 Lase Street",
@@ -123,8 +123,8 @@ const dummyDatas = [
   },
   {
     id: 18,
-    firstName: "First C13",
-    lastName: "Last C13",
+    firstName: "Roger",
+    lastName: "Kelly",
     email: "vewzifco@elo.it",
     phoneNumber: "(332) 565-7132",
     address: "1652 Ohci Highway",
@@ -133,8 +133,8 @@ const dummyDatas = [
   },
   {
     id: 17,
-    firstName: "First D14",
-    lastName: "Last D14",
+    firstName: "Harold",
+    lastName: "Simpson",
     email: "ra@lut.tj",
     phoneNumber: "(885) 765-1163",
     address: "650 Acako Ridge",
@@ -143,8 +143,8 @@ const dummyDatas = [
   },
   {
     id: 16,
-    firstName: "First E15",
-    lastName: "Last E15",
+    firstName: "Edgar",
+    lastName: "Schultz",
     email: "ne@portasib.lt",
     phoneNumber: "(922) 480-4573",
     address: "532 Punro Extension",
@@ -153,8 +153,8 @@ const dummyDatas = [
   },
   {
     id: 15,
-    firstName: "First A16",
-    lastName: "Last A16",
+    firstName: "Mathilda",
+    lastName: "Murphy",
     email: "urohohti@papjog.ck",
     phoneNumber: "(259) 587-9815",
     address: "1755 Cadjaw Trail16",
@@ -163,8 +163,8 @@ const dummyDatas = [
   },
   {
     id: 14,
-    firstName: "First B17",
-    lastName: "Last B17",
+    firstName: "Eunice",
+    lastName: "King",
     email: "wonva@wi.io",
     phoneNumber: "(325) 401-7806",
     address: "1922 Lota Circle",
@@ -173,8 +173,8 @@ const dummyDatas = [
   },
   {
     id: 13,
-    firstName: "First C18",
-    lastName: "Last C18",
+    firstName: "Brent",
+    lastName: "Tyler",
     email: "gonnuhpeg@bapjoh.va",
     phoneNumber: "(672) 688-9512",
     address: "516 Pimo Road",
@@ -183,8 +183,8 @@ const dummyDatas = [
   },
   {
     id: 12,
-    firstName: "First D19",
-    lastName: "Last D19",
+    firstName: "Lillie",
+    lastName: "Frazier",
     email: "igivokmuj@dem.th",
     phoneNumber: "(852) 484-2348",
     address: "1947 Covza Loop",
@@ -193,8 +193,8 @@ const dummyDatas = [
   },
   {
     id: 11,
-    firstName: "First E20",
-    lastName: "Last E20",
+    firstName: "Ann",
+    lastName: "Castillo",
     email: "katgevjo@damih.lr",
     phoneNumber: "(904) 317-2548",
     address: "1760 Zarvan Ridge",
@@ -203,8 +203,8 @@ const dummyDatas = [
   },
   {
     id: 10,
-    firstName: "First B12",
-    lastName: "Last B12",
+    firstName: "Jayden",
+    lastName: "Barker",
     email: "gam@lumwa.lr",
     phoneNumber: "(985) 938-9604",
     address: "1940 Temod Street",
@@ -213,8 +213,8 @@ const dummyDatas = [
   },
   {
     id: 9,
-    firstName: "First B12",
-    lastName: "Last B12",
+    firstName: "Warren",
+    lastName: "Wilkerson",
     email: "les@duidoan.gy",
     phoneNumber: "(867) 860-4871",
     address: "1108 Tiulo Lane",
@@ -223,8 +223,8 @@ const dummyDatas = [
   },
   {
     id: 8,
-    firstName: "First B12",
-    lastName: "Last B12",
+    firstName: "Logan",
+    lastName: "Peters",
     email: "refi@zac.ps",
     phoneNumber: "(934) 689-4455",
     address: "348 Ickej Junction",
@@ -233,8 +233,8 @@ const dummyDatas = [
   },
   {
     id: 7,
-    firstName: "First B12",
-    lastName: "Last B12",
+    firstName: "Elmer",
+    lastName: "Garcia",
     email: "mot@wahbop.gs",
     phoneNumber: "(213) 454-5447",
     address: "1062 Bebi Manor",
@@ -243,8 +243,8 @@ const dummyDatas = [
   },
   {
     id: 6,
-    firstName: "First B12",
-    lastName: "Last B12",
+    firstName: "Terry",
+    lastName: "Haynes",
     email: "ganego@hobsi.ss",
     phoneNumber: "(605) 732-7500",
     address: "1699 Noje Court",
@@ -253,8 +253,8 @@ const dummyDatas = [
   },
   {
     id: 5,
-    firstName: "First B12",
-    lastName: "Last B12",
+    firstName: "Todd",
+    lastName: "Hines",
     email: "pun@sombu.bv",
     phoneNumber: "(389) 603-7422",
     address: "1543 Sabig Turnpike",
@@ -263,8 +263,8 @@ const dummyDatas = [
   },
   {
     id: 4,
-    firstName: "First B12",
-    lastName: "Last B12",
+    firstName: "Lillian",
+    lastName: "Vega",
     email: "zewpic@hijkurre.im",
     phoneNumber: "(960) 679-2742",
     address: "253 Beho Terrace",
@@ -273,8 +273,8 @@ const dummyDatas = [
   },
   {
     id: 3,
-    firstName: "First B12",
-    lastName: "Last B12",
+    firstName: "Dorothy",
+    lastName: "Fletcher",
     email: "gedpi@cumahhu.jo",
     phoneNumber: "(752) 765-3244",
     address: "315 Berja River",
@@ -282,6 +282,16 @@ const dummyDatas = [
     fullName: "Dorothy Fletcher",
   },
 ];
+
+const getLocalStorageData = () => {
+  const addressBookData = window.localStorage.getItem("addressbook-data");
+  if (!addressBookData) {
+    window.localStorage.setItem("addressbook-data", JSON.stringify(dummyDatas));
+    return dummyDatas;
+  }
+
+  return JSON.parse(addressBookData);
+};
 
 class AddressBook {
   contactList;
@@ -311,6 +321,13 @@ class AddressBook {
     this.totalPage = Math.ceil(filteredList.length / 10);
   }
 
+  #updateLocalStorage() {
+    window.localStorage.setItem(
+      "addressbook-data",
+      JSON.stringify(this.contactList)
+    );
+  }
+
   handleChangePage(page) {
     const filteredList = this.contactList.filter((contact) =>
       contact.fullName.includes(this.searchKey)
@@ -326,6 +343,8 @@ class AddressBook {
     this.contactList.unshift(contact);
     this.updateTotalPage();
     this.handleChangePage(this.currentPage);
+
+    this.#updateLocalStorage();
   }
 
   addToBeDeleted(id) {
@@ -344,6 +363,8 @@ class AddressBook {
 
       return contact;
     });
+
+    this.#updateLocalStorage();
   }
 
   deleteContact() {
@@ -353,6 +374,8 @@ class AddressBook {
     this.clearToBeDeleted();
     this.updateTotalPage();
     this.handleChangePage(1);
+
+    this.#updateLocalStorage();
   }
 
   removeToBeDeleted(toBeRemoveId) {
@@ -366,7 +389,7 @@ class AddressBook {
   }
 }
 
-const AddressBookEntity = new AddressBook(dummyDatas);
+const AddressBookEntity = new AddressBook(getLocalStorageData());
 
 const createContactForm = document.querySelector("#create-contact-form");
 const openCreateModalButton = document.querySelector("#open-create-modal");
